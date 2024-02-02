@@ -1,0 +1,173 @@
+<!--
+   Exercice 9: Travaux Pratiques 1 - Structuration sémantique d'un article de blog
+
+   Objectif:
+   - Utiliser des balises sémantiques pour structurer un article de blog sur un week-end en Sicile.
+
+   Instructions:
+    1. Identifier ce qui est représenté par le contenu et la structure de la page (ex : menu, paragraphe, pied de page)
+    2. Lorsque c'est pertinent, remplacez les balises <div> et <span> par des balises sémantiques.
+    3. Utilisez des balises block comme <main>, <header>, <footer>, <section>, <aside>, <nav>, <h1>, <h2>, <h3>, <p>, <ul>, <ol>, <li>.
+    4. Utilisez des balises inline comme <a>, <strong>, <em>
+
+    Ressources :
+    - balises inline pour formater le texte, https://www.w3schools.com/html/html_formatting.asp
+
+    -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./exo-22-tp1.css">
+    <title>Week-end en Sicile</title>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <!-- Menu principal -->
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Voyages</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Gastronomie</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+        <!-- Image d'introduction -->
+        <img class="hero__image" src="https://images.unsplash.com/photo-1565036772182-bfe1501a036d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vue sur la mer depuis une falaise à Taormina">
+        
+        <!-- Titre principal -->
+        <h1 class="hero__title">Exploration d'un Week-end en Sicile</h1>
+    </div>
+
+    <!-- Aside avec des catégories d'article du blog -->
+    <aside>
+        <h3>Catégories</h3> 
+        <ul>
+            <li><a href="#">Voyages</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Gastronomie</a></li>
+        </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main>
+        <p>La Sicile, île ensoleillée au cœur de la mer Méditerranée, évoque une atmosphère unique. 
+            Son mélange de <strong>cultures diverses</strong> laisse une empreinte indélébile sur chaque coin de l'île. 
+            Ce récit vous plongera dans un week-end enchanteur à la découverte de la Sicile.
+        </p>
+
+        <!-- Sous-titres et paragraphes -->
+        <section class="main__section">
+            <h2 class="main__section-title">La Charmante Ville de Catane</h2>
+        
+            <p>Notre aventure débute à Catane, une ville portuaire dynamique. 
+                Les ruelles étroites regorgent de <strong>histoire</strong> et de <strong>vie locale</strong>. 
+                Des églises baroques aux marchés animés, Catane offre une immersion totale 
+                dans le quotidien sicilien.
+            </p>
+
+            <p>En déambulant dans les rues pavées, vous découvrirez l'influence des différentes civilisations 
+                ayant laissé leur empreinte sur la ville. Les églises, telles que la magnifique cathédrale 
+                Sainte-Agathe, <em>témoignent du riche patrimoine culturel</em>. Les marchés, tels que le marché 
+                de la Pescheria, éveillent les sens avec des étals colorés de fruits de mer frais, 
+                de fruits juteux et d'épices envoûtantes. Les habitants chaleureux ajoutent une touche authentique, 
+                partageant des histoires de génération en génération. Catane, une véritable fenêtre sur la Sicile, 
+                vous plongera dans une expérience inoubliable.
+            </p>
+        </section>
+
+        <section class="main__section">
+            
+            <h2 class="main__section-title">Les Paysages autour de Taormine</h2>
+    
+            <p>À quelques kilomètres de Catane, Taormine émerveille par ses vues panoramiques. 
+                Perchée sur une colline, la ville offre un spectacle saisissant sur la mer. 
+                Explorez les ruelles pavées, découvrez l'amphithéâtre antique, et laissez-vous 
+                envoûter par la <strong>beauté naturelle</strong>
+            </p>
+
+            <p>Taormine, joyau de la côte est, offre des paysages dignes d'une carte postale. 
+                Les rues sinueuses vous guideront à travers des boutiques pittoresques 
+                et des cafés charmants. L'amphithéâtre gréco-romain, avec ses gradins offrant une vue imprenable 
+                sur la mer Ionienne, crée une ambiance théâtrale qui résonne avec le passé glorieux de la Sicile. 
+                Les jardins de la Villa Comunale invitent à la détente, où chaque coin dévoile une vue 
+                à couper le souffle. Taormine, <em>où l'histoire et la nature se mêlent harmonieusement</em>, 
+                promet une expérience sensorielle au-delà de l'ordinaire.
+            </p>
+        </section>
+
+        <section class="main__section">
+    
+            <h2 class="main__section-title">Excursion Inoubliable sur l'Etna</h2>
+    
+            <p>L'Etna, majestueux volcan actif, attire les aventuriers. 
+                Une excursion sur ses pentes offre des panoramas spectaculaires. 
+                L'odeur des cendres et le bruit du magma grondant créent une expérience 
+                <strong>sensorielle inoubliable</strong>
+            </p>
+            <p>L'aventure culmine avec l'ascension de l'Etna, le plus haut volcan actif d'Europe. 
+                Les sentiers escarpés vous conduiront à travers des <strong>paysages lunaires</strong>, 
+                où la lave figée témoigne de l'activité éruptive passée. 
+                En atteignant les cratères, une vue panoramique à couper le souffle 
+                sur la Sicile se dévoile. L'air pur est chargé d'une atmosphère unique, 
+                oscillant entre le mystique et l'audacieux. Chaque pas sur le sol volcanique 
+                est une immersion dans la puissance et la <strong>beauté brute</strong> de la nature. 
+                Une ascension de l'Etna, défi fascinant et expérience mémorable, demeure un point fort 
+                de ce week-end sicilien.
+            </p>
+        </section>
+
+        <section class="main__section">
+    
+            <h2 class="main__section-title">Les Délices Culinaires Siciliens</h2>
+
+            <p>La Sicile est une destination culinaire de premier plan. 
+                Des arancinis délicieusement frits aux cannoli sucrés, 
+                chaque bouchée est une <em>célébration des saveurs méditerranéennes</em>. 
+                Explorez les marchés et savourez des plats préparés avec passion.
+            </p>
+            <p>Le voyage culinaire en Sicile est une exploration sensorielle des délices méditerranéens. 
+                Les marchés regorgent d'une profusion de produits locaux, des olives juteuses 
+                aux fromages artisanaux. L'art de la cuisine sicilienne se révèle à travers 
+                des plats emblématiques tels que les <strong>arancinis</strong>, des boules de riz farcies, 
+                croustillantes à l'extérieur et moelleuses à l'intérieur. Les <strong>cannoli</strong>, 
+                des pâtisseries sucrées garnies de ricotta, offrent une finale sucrée parfaite. 
+                Chaque repas devient une célébration de la tradition et de la convivialité. 
+                Découvrir la Sicile à travers sa cuisine, c'est s'immerger dans un festin 
+                de saveurs riches et authentiques, une expérience gastronomique qui restera 
+                gravée dans les mémoires.
+            </p>
+
+            <div>
+                <h3>Mes plats siciliens favoris</h3>
+                <ul>
+                    <li>Cannoli 🤤</li>
+                    <li>Cassata siciliana 🤩</li>
+                    <li>Arancini 😁</li>
+                    <li>Caponata 😋</li>  
+                </ul>
+            </div>
+        </section>
+
+        <p>Ce week-end en Sicile a été bien plus qu'une simple escapade. 
+            Chaque lieu visité a laissé une empreinte, chaque plat dégusté a raconté une histoire. 
+            Replongez dans ces moments siciliens et laissez-vous inspirer pour votre propre aventure.
+        </p>
+        
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon Blog de Voyage</p>
+    </footer>
+</body>
+</html>

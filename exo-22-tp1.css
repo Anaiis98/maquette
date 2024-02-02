@@ -1,0 +1,163 @@
+/* 
+   Exercice 22: Travaux Pratiques 2 - Stylisation d'un article de blog
+
+   Objectif:
+   - Appliquer des styles CSS pour rendre l'article de blog visuellement attrayant.
+   - Utiliser les propriétés fondamentales de CSS.
+   - Organiser et structurer le CSS de manière claire.
+   - Préférez les sélecteurs de classe
+   - Privilégier la convention BEM pour nommer les sélecteurs.
+
+   Instructions :
+    1. Ajoutez des styles pour le corps du document, définissez la police, la couleur du texte, etc.
+    2. Stylez l'en-tête (header) avec une couleur de fond, une marge interne, et centrez le texte du menu.
+    3. Donnez une mise en forme attrayante à l'image d'introduction.
+    4. Stylisez le titre principal (h1) en utilisant une police plus grande et une couleur accrocheuse.
+    5. Appliquez des styles à la section principale (main) pour améliorer la lisibilité du contenu.
+    6. Ajoutez des styles à chaque section (h2 et p) pour créer une hiérarchie visuelle.
+    7. Donnez une mise en page attrayante à l'aside avec des catégories d'articles du blog.
+        - option 1 : positionnez l'aside en largeur entre le main et le footer 
+        - option 2 : Renseignez-vous sur la propriété 'float' pour mettre l'aside sur un côté de la page
+    8. Stylisez le pied de page (footer) pour le rendre sobre et élégant.
+    
+    Bonus :
+    9. Ne laissez pas le rendu de <em> et <strong> au choix de votre navigateur, définissez-en le style
+
+   Ressources :
+    - Utilisez la convention BEM pour nommer vos sélecteurs (Block__Element--Modifier).
+
+    Palette de couleurs :
+    - Primary: #00a6b2 (nuance de cyan)
+    - Secondary: #d4a219 (nuance de doré)
+    - Tertiary: #e74c3c (nuance de rouge)
+*/
+
+/* Début du code CSS */
+
+/* 1. Styles pour le corps du document */
+
+
+/* 2. Styles pour l'en-tête et le titre principal */
+
+
+/* 3. Styles pour l'image d'introduction */
+
+
+/* 4. et 5. Styles pour la section principale et le titre principal */
+
+
+/* 6. Styles pour les sections (h2 et p) */
+
+
+/* 7. Styles pour l'aside avec des catégories */
+
+
+/* 8. Styles pour le pied de page */
+
+
+/* Fin du code CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*********************** NAV ****************************/
+header{
+    background-color: #E0D0C9;
+}
+nav,ul{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border-bottom: 2px solid black;
+}
+/*********************** HERO ****************************/
+.hero__image{
+    width: 100%;
+    height: 90dvh;
+}
+.hero__title{
+    text-align: center;
+    font-size: 3rem;
+    color: cornflowerblue;
+}
+/*********************** ASIDE ****************************/
+
+aside{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    height: 100%;
+}
+aside > ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+aside > h3 {
+    text-align: center;
+    margin-left: 3rem;
+}
+
+/*********************** MAIN ****************************/
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+strong {
+    font-weight: normal !important
+}
+main > p {
+    text-align: center;
+}
+/*********************** SECTION  ****************************/
+.main__section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.main__section-title{
+    text-align: center;
+}
+main > section > div > h3 {
+    text-align: center;
+}
+main > section > div > ul > li {
+    top:.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 5vh ;
+    background-color:#E0D0C9;
+    border-radius: 3px;
+    gap:1rem;
+}
+
+/*********************** FOOTER ****************************/
+footer > p {
+    text-align: center;
+}

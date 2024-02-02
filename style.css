@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+:root {
+    --brown: #C5C0BD;
+    --text-color:#797979;
+    --font-bebas:'Bebas Neue', sans-serif;
+    --yellow:#EEB37C;
+    --bg-card:#83776F;
+    --text-white:rgb(245, 243, 243);
+    --orange:#F5A54D;
+    --bg-yellow:#c8ac92;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: var(--font-bebas);
+}
+/******************************** NAV ******************************/
+header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height: 13vh;
+}
+header > img{
+    width: 80px;
+}
+nav{
+    display: flex;
+    align-items: center; 
+    gap:6rem;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+    gap:3rem;
+}
+.nav-li{
+    color:var(--brown);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight:bold ;
+}
+.search{
+    background-color:var(--brown) ;
+    width: 150px;
+    height: 5vh;
+    border-radius:500px;
+    border:none;
+    margin-right: -3rem;
+}
+form {
+    display: flex;
+    
+}
+.search ~ button {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+.icon-search{
+    width: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+
+/******************************** SECTION 1 BG-IMG ******************************/
+.bg-img{
+    background-image: url(./img/Image\ 4.png);
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.bg-img > h1 {
+     font-size:60px;
+     width: 39%;
+     padding-left: 2rem;
+     font-family: var(--font-bebas);
+     text-transform: uppercase;
+     color: var(--yellow);
+     text-shadow: 3px 1px 5px var(--yellow);
+     letter-spacing: .6rem;
+}
+.bg-img > p:nth-of-type(1){
+    color:var(--text-color);
+    padding-left: 2rem;
+    margin-top:-3rem;
+    font-weight: bold;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: var(--font-bebas);
+}
+.bg-img > button{
+    margin-left:2rem;
+    width: 120px;
+    height: 4vh;
+    background-color: white;
+    border: none;
+    border-radius:100px;
+    color:var(--text-color);
+    font-weight:bolder;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--text-color);
+}
+.bg-img > p:nth-of-type(2){
+    margin-left:2rem;
+    width: 30%;
+    font-style: italic;
+    color:var(--text-color);
+}
+/******************************** SECTION 1 CARD ******************************/
+.section-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+}
+.div-container{
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+}
+.section-card > h2 {
+    color: var(--yellow);
+    margin-top:4rem;
+    text-transform: uppercase;
+    font-family: var(--font-bebas);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: .2rem;
+    text-shadow: 1px 1px .2px var(--yellow);
+}
+.section-card > p {
+    text-align: center;
+    width: 30%;
+    color:var(--text-color);
+    font-size: 18px;
+    margin-top: -1.5rem;
+}
+.card{
+    width: 20%;
+    height: 55vh;
+    display: flex;
+    flex-direction:column;
+    border: 1px solid;
+    background-color: var(--bg-card);
+    color: var(--text-white);
+}
+.card > h3 {
+    margin-left:1rem;
+    text-transform: capitalize; 
+}
+.card > p {
+    margin-left:1rem;
+    margin-top:-.5rem;
+}
+.section-card > button {
+    width: 200px;
+    height: 6vh;
+    background-color: var(--bg-card);
+    color: var(--text-white);
+    border-radius: 150px;
+    border:none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    margin-bottom: 5rem;
+}
+/******************************** SECTION Discount ******************************/
+.discount{
+    width: 100%;
+    height: 65vh;
+    display: flex; 
+    justify-content: center;
+}
+.bg-img-2{
+    background-image: url(./img/Image\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 40%;
+   
+}
+.card-discount{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: var(--bg-card);
+}
+.card-discount > h2 {
+    color: var(--text-white);
+    font-size: 50px;
+    padding-left: 2rem;
+}
+.card-discount > p {
+    color: var(--text-white);
+    margin-top: -1rem;
+    width: 70%;
+    padding-left: 2rem;
+}
+.card-discount > button {
+    width: 200px;
+    height: 6vh;
+    background-color:var(--orange);
+    color: var(--text-white);
+    border-radius: 150px;
+    border:none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+/******************************** SECTION Discount-2 ******************************/
+.discount-2{
+    width: 100%;
+    height: 65vh;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 5rem;
+}
+.bg-img-2{
+    background-image: url(./img/Image\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 40%;
+}
+.card-discount-2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: var(--bg-yellow);
+}
+.card-discount-2 > h2 {
+    color: var(--text-white);
+    font-size: 50px;
+    padding-left: 6rem;
+}
+.card-discount-2 > p {
+    color: var(--text-white);
+    margin-top: -1rem;
+    width: 70%;
+    padding-left: 6rem;
+}
+.card-discount-2 > button {
+    width: 200px;
+    height: 6vh;
+    background-color:var(--orange);
+    color: var(--text-white);
+    border-radius: 150px;
+    border:none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+/******************************** SECTION Discount ******************************/
+.banniere{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-card);
+    height: 45dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-bebas);
+}
+.banniere > h2 {
+    color:var(--text-white);
+    font-size: 35px;
+}
+.banniere > p {
+    width: 60%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.489);
+    font-size: 20px;
+    font-weight: lighter;
+}
+/******************************** SECTION EXPLORE ******************************/
+.explore{
+    background-image: url(./img/Image.png);
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+    height: 70vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.explore > h2  {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--font-bebas);
+    text-shadow: 1px 1px .2px var(--yellow);
+    margin-right: 3.5rem;
+    font-style: italic;
+    letter-spacing: .1rem;
+}
+.explore > h2:nth-child(1){
+    color: var(--yellow);
+}
+.explore > h2:nth-child(2){
+    color: var(--text-color);
+    text-shadow: 1px 1px .2px var(--text-color);
+    margin-top: -2rem;
+}
+/******************************** SECTION lorem ******************************/
+.container-ipsum{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+   
+}
+.card-ipsum{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-ipsum > h3 {
+    color: var(--yellow);
+    text-transform: capitalize;
+    font-size: 20px;
+
+}
+/****************************** MILIEU **************************/
+.button-title{
+    padding: 10px;
+    outline: none;
+    color: azure;
+    background-color: rgb(95, 95, 90);
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin: 10px;
+    transform: translateX(-60px);
+    border: none;
+}
+.recherche{
+    color: rgb(137, 137, 120);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin: 10px;
+    background-color: rgb(248, 248, 246);
+    border: none;
+    width: 400px;
+}
+.milieu{
+    text-align: center;
+    padding: 15px;
+    background-color: var(--yellow);
+}
+.section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.milieu-title{
+    color: var(--text-white);
+    font-size: 40px;
+}
+.milieu-para{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+}
+/****************************** FOOTER **************************/
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }  
+footer {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--bg-card);
+    color: var(--text-white);
+    justify-content: center;
+    align-items: center;
+    gap:-2rem;
+}  
+
+.un{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+.titre{
+    font-size: 20px;
+    margin-left:1rem;
+    text-transform: capitalize;
+}
+.social{
+    display: flex;
+    margin-left:1rem; 
+    gap:.5rem;
+}
+.footer-para{
+    margin-left:1rem;
+}
+.deux{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center; 
+}
+.titre-2{
+    margin-left:2.5rem;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.pied__items{
+    color: var(--text-white);
+    text-transform: inherit;
+    font-weight: lighter;
+    list-style: none;
+    text-decoration: none;
+}
+.pied__items:visited{
+    color: var(--text-white);
+    text-decoration: none;
+}
+.titre-3{
+    margin-top:-2.5rem;
+    margin-left: 2.2rem;;
+}
